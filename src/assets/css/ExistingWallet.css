@@ -1,0 +1,177 @@
+.existing-wallet {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1; /* Ensure content stays above particles */
+}
+.existing-wallet.container {
+    background: rgb(29, 38, 51)
+}
+
+.existing-wallet h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.existing-wallet p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.existing-wallet .card {
+    background-color: rgb(29, 38, 51);
+    /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border: 0px;
+}
+
+
+.existing-wallet .phrase-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.existing-wallet .phrase-input {
+    flex: 1 1 48%;
+    margin-right: 2%;
+    border-radius: 5px;
+    background-color: rgb(29, 38, 51);
+    color: white;
+}
+
+.existing-wallet .phrase-input:last-of-type {
+    margin-right: 0;
+}
+
+.existing-wallet .btn-primary {
+    /* background-color: #28a745;
+    border-color: #28a745; */
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.existing-wallet .btn-primary:hover {
+    /* background-color: #218838; */
+    /* border-color: #1e7e34; */
+}
+
+.header-with-back-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: flex-start;
+}
+
+
+.wallet-existing-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+}
+
+.header-with-back-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.back-button {
+    display: flex;
+    align-items: center; /* Center align items within the button */
+    font-size: 1rem;
+    color: white !important; /* Text color */
+    text-decoration: none !important; /* Remove underline */
+    background: blueviolet;
+    /* border: 2px solid !important; */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 8px 16px; /* Add padding for a better look */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.back-button:hover {
+    color: #0056b3; /* Darker shade for hover effect */
+    background: darkviolet; /* Background color change on hover */
+}
+
+.back-icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+  
+
+.phrase-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* Space between input rows */
+  }
+  
+  .phrase-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    flex: 1;
+  }
+  
+  .phrase-input {
+    width: 100%; /* Ensure inputs take up full width of the wrapper */
+    padding: 0.5rem 0.75rem; /* Add padding for spacing */
+    padding-left: 2.5rem; /* Add padding to accommodate label */
+    border-radius: 0; /* Override Bootstrap rounded class */
+    border: 1px solid #ccc; /* Default border color */
+    font-size: 1rem; /* Ensure consistent font size */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align:center
+  }
+  
+  .phrase-label {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem; /* Adjust to provide more space for text */
+    transform: translateY(-50%);
+    padding: 0 0.25rem; /* Padding to make label visible inside the input */
+    color: #807e7e; /* Text color */
+    font-size: 1rem; /* Font size */
+    font-weight: bold;
+    z-index: 1; /* Ensure label is above the input */
+    pointer-events: none; /* Allow clicks to pass through the label */
+  }
+  
+  
+  /* Focus effect */
+  .phrase-input:focus {
+    background: rgb(29, 38, 51);
+    background-color: rgb(29, 38, 51);
+  }
+  
+  /* Ensure responsiveness */
+  @media (max-width: 768px) {
+    .phrase-label {
+      font-size: 0.875rem; /* Smaller font size on mobile */
+    }
+    .phrase-input {
+      font-size: 0.875rem; /* Adjust input font size */
+      padding-left: 2rem; /* Adjust padding for smaller screens */
+    }
+  }
+  

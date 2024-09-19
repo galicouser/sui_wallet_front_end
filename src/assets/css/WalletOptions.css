@@ -1,0 +1,111 @@
+
+
+  /* Wallet Options CSS */
+  .wallet-options-container {
+    position: relative;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Ensure particles don't overflow */
+  }
+  
+.wallet-options.container {
+    background: rgb(29, 38, 51)
+}
+  
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Particles behind the content */
+  }
+  
+  .wallet-options {
+    position: relative;
+    z-index: 1; /* Ensure the content is above particles */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure responsiveness */
+    max-width: 500px; /* Limit the width */
+    text-align: left; /* Align text to left to keep consistency */
+  }
+  
+  .wallet-options h2 {
+    font-size: 2rem;
+    color: white; /* Primary blue color for headings */
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .wallet-options p {
+        text-align: center;
+        color: white;
+    }
+  .wallet-options .list-group-item {
+    font-size: 1.2rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between; /* Adjust icon and text alignment */
+    background-color: #f8f9fa;
+    border: none;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    border-radius: 0px;
+    color: #333;
+  }
+  
+  .wallet-options .wallet-option {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .wallet-options .option-icon {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    
+  }
+  
+  .wallet-options .option-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wallet-options .option-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000d4;
+    text-decoration: none;
+}
+  
+  .wallet-options .option-description {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .wallet-options {
+      padding: 15px;
+    }
+  
+    .wallet-options h2 {
+      font-size: 1.5rem;
+    }
+  
+    .wallet-options .list-group-item {
+      font-size: 1rem;
+    }
+  
+    .wallet-options .option-icon {
+      font-size: 1.25rem;
+    }
+  
+    .wallet-options .option-description {
+      font-size: 0.75rem;
+    }
+  }
+  

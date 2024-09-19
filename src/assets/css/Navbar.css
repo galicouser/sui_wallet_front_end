@@ -1,0 +1,45 @@
+/* Styling for the navbar */
+.wallet-navbar {
+    padding: 15px 10px;
+    border-bottom: 2px solid #00c6ff;
+    background: linear-gradient(90deg, #020024 0%, #00c6ff 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.brand-icon {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.nav-links .nav-item {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.nav-links .nav-item:hover {
+    color: #00c6ff;
+}
+
+.nav-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+/* Adding hover effects */
+.navbar-brand:hover,
+.nav-item:hover {
+    color: #00c6ff;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
